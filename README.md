@@ -1,54 +1,57 @@
-# React + TypeScript + Vite
+# Github Blog - Ignite Rocketseat Challenge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+☕ Github Blog App is a web application that displays data from my GitHub profile and repository issues, styled as blog posts.
 
-Currently, two official plugins are available:
+## Table of contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Useful resources](#useful-resources)
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Overview
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### The Challenge
+This challenge was part of Rocketseat's Ignite React track. The goal was to create an application that uses the GitHub API to retrieve issues from this repository, data from my profile and display them as a blog.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Features
+Users should be able to:
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- View my GitHub profile (avatar, name, bio, number of followers, etc.)
+- View list of issues (publications) of this repository
+- Filter all issues (publications) of the repository with a brief summary of its content
+- View detailed content for each individual issue/post
+
+### Screenshot
+
+## My process
+
+### Built with
+
+- [React](https://reactjs.org/) - JS library
+- [Typescript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [Styled component](https://styled-components.com/)
+- [Zod](https://zod.dev/)
+- [Phosphor Icons](https://phosphoricons.com/)
+- [React router dom](https://reactrouter.com/)
+- [Axios](https://axios-http.com/ptbr/docs/intro)
+- [React Markdown](https://www.npmjs.com/package/react-markdown/v/8.0.6)
+- [Date fns](https://date-fns.org/)
+
+### What I learned
+
+- How to use React Developer Tools to analyze component performance and re-renders;
+- Applied React.memo to optimize the Profile component, preventing unnecessary re-renders when searching posts;
+- Used React Markdown to render and style markdown content, including code blocks.
+  
+### Useful resources
+
+- [react-markdown]([https://www.youtube.com/watch?v=H91DhKPjhPk](https://github.com/remarkjs/react-markdown)) -  Helped me render and customize markdown content
+- [Rocketseat](https://www.rocketseat.com.br/) To React classes
+
